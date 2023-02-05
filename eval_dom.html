@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="eval_dom.css">
+    <title>Evaluation dom</title>
+</head>
+<body>
+    <h1>Eval DOM 02/02/2023</h1>
+   <!-- bloc du Header -->
+    <header>
+            <button id="collapse">...</button> 
+            <div id="liste_menu">
+                <a href="#" id="btn_menu1"><div class="menu_top">Menu 5</div></a>  
+                <a href="#" id="btn_menu2"><div class="menu_top">Menu 4</div></a>
+                <a href="#" id="btn_menu3"><div class="menu_top">Menu 3</div></a>
+                <a href="#" id="btn_menu4"><div class="menu_top">Menu 2</div></a>
+                <a href="#" id="btn_menu5"><div class="menu_top">Menu 1</div></a>
+            </div>
+    </header>
+        <span id="clear"></span> <!-- balise vide pour pouvoir enlever le float dans le css-->
+        <!-- mise en place du gros bloc de corps prinicpal -->
+    <section> 
+        <!-- bloc du menu 1 -->
+        <div class="bloc_menu" id="menu1">
+            <h2>MENU 1</h2>
+            <table>
+                <thead>
+                    <th class="liens">Link 1</th>
+                    <th class="liens">Link 2</th>
+                    <th class="liens">Link 3</th>
+                </thead>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+            <img id="engrenage" src="gear-240137_640.jpg">
+            <img id="engrenage1" src="gears-1059756_640.png">
+            <img id="engrenage2" src="gears-148196_640.png">
+        </div>
+        <!-- bloc du menu 2 -->
+        <div class="bloc_menu" id="menu2">
+            <h2>MENU 2</h2>
+            <div input_menu2>
+                <input class="input_name"id="nom" type="text" placeholder="Prénom">
+                <input class="input_name" id="prenom" type="text" placeholder="Nom">
+            </div>
+            <div id="btn_data">
+            <input class="input_name" id="add_data" type="button" value="ADD">
+        </div>
+            <table id="identite"> 
+                <thead>
+                    <th id="fusion" colspan="2">Table</th>
+             </thead>
+            </table>
+        </div>
+        <!-- bloc du menu 3 -->
+        <div class="bloc_menu" id="menu3">
+            <h2>MENU 3</h2>
+            <select name="style_menu3" id="style_menu3">
+                <option id ="default" value="defaut">Drop-down menu</option>
+                <option class = "style1" value="style1">Style 1</option>
+                <option class = "style2" value="style2">Style 2</option>
+                <option class = "style3" value="style3">Style 3</option>
+            </select>
+            <h3>paragraph</h3>
+            <p id>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat eum velit, amet ducimus voluptatem necessitatibus doloremque beatae soluta ratione harum, magni repellat non? Eaque sit eius, placeat quaerat nam molestiae.</p>
+        </div>
+        <div class="bloc_menu" id="menu4">
+            <h2>MENU 4</h2>
+            <ul>
+                <li class="values">Value 1</li>
+                <li class="values">Value 2</li>
+                <li class="values">Value 3</li>
+                <li class="values">Value 4</li>
+            </ul>
+            <div id="container_btn">
+                <button class = "boutons" id="up">UP</button>
+                <button class= "boutons" id="down">DOWN</button>
+            </div>
+        </div>
+        <div class="bloc_menu" id="menu5">
+            <h2>MENU 5</h2>
+        <div id="check_boite">
+            <div>
+                <input type="checkbox" id="opt1" name="opt1" value="opt1">
+            <label for="opt1">Option 1</label></div>
+            <div>
+                <input type="checkbox" id="opt2" name="opt2" value="opt2">
+            <label for="opt2">Option 2</label></div>
+            <div>
+                <input type="checkbox" id="opt3" name="opt3" value="opt3">
+            <label for="opt3">Option 3</label></div>
+            <div>
+                <input type="checkbox" id="opt4" name="opt4" value="opt4">
+            <label for="opt4">Option 4</label></div>
+        </div>
+        <div id="div_menu5">
+            <input type="radio" name="choix_menu5" value="div_opt" id="div_opt">
+        <label for="div_opt">div</label>
+            <input type="radio" name="choix_menu5" value="opt_opt" id="opt_opt">
+        <label for="opt_opt">opt</label>
+        </div>  
+        <!-- Balise créee pour pouvoir être la borne d'insertion de la div ou de la liste d'option créée -->
+        <div id="cloture"> 
+
+        </div>
+        </div>
+        
+    </section>
+    <script src="eval_dom.js"></script>
+    
+</body>
+</html>
